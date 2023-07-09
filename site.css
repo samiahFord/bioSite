@@ -1,14 +1,18 @@
 html{
-    background-color: #E3DBD3;
+    background-color: #F5F5F4;
+    font-family: 'Quicksand', sans-serif;
 }
 header{
-    padding-top: 3%;
+    padding-top: 1%;
 }
 footer{
     background-color: #9D7982;
     left: 0;
     padding: 1%;
     font-weight: bold;
+}
+h1, h2, h3{
+    font-family: 'Satisfy', sans-serif;
 }
 #navbar{
     background-color: #9D7982;
@@ -27,61 +31,69 @@ footer{
     left: 5%;
     font-size: 20px;
 }
+#navbar a:hover{
+    border: 2px solid #F5F5F4;
+    background-color: #B9B3C4;
+}
+#navbar a:active{
+    border: 2px solid #6e555b;
+    background-color: #91747b;
+}
 #name-card img{
-    display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 65%;
-}
-#name-card{
-    background-color: #A6858D;
-    padding: 1%;
+    max-width: 100%;
+    border-top: 5px solid #9D7982;  
+    border-bottom: 5px solid #9D7982;    
 }
 #content{
-    background-color: #A6858D;
     padding: 1%;
     margin: auto;
 }
 .landing-blurb{
     display: inline-block;
     width: 25%;
-    border-radius: 3px;
-    background-color: #C8B7C9;
     position: relative;
     min-height: 250px;
     margin: auto;
     padding: 3%;
-    height: 350px;
-    margin-left: auto; margin-right: auto;
+}
+.landing-blurb.center{
+    border-right: 4px solid #6e555b;
+    border-left: 4px solid #6e555b;
 }
 .pic{
-    height: 200px;
-    width: 200px;
-    border-radius: 5px;
+    height: 100%;
+    width: 100%;
     display: block;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
-.about{
-    background-color: #C8B7C9;
-    padding: 1%;
-    border: 1px solid #9D7982;
-    border-radius: 3px;
+.hobbies.pic{
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain;
 }
 .portrait{
-    width: 40%;
     float: right;
     max-height: 550px;
     margin: 1%;
-}
-.text{
-    height: 550px;
+    border-radius: 10px;
 }
 .tile{
-    background-color: #C8B7C9;
-    padding: 1%;
-    border: 1px solid #9D7982;
-    border-radius: 3px;
+    padding: 3%;
+    border-bottom: 4px solid #6e555b;
     height: 200px;
     margin: auto;
-    width: 65%;
+}
+#leftbox{
+float:left;
+max-width: 40%;
+height: 200px;
+}
+#rightbox{
+float: right;
+max-width: 60%;
+height: 200px;
+object-fit:contain;
 }
